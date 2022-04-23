@@ -6,6 +6,13 @@
 
 body {
     font-family: sans-serif;
+    background-color:grey;
+    color: white;
+    font-family: monospace;
+}
+
+.intro-sidebar > h2 {
+    margin-top: 45px;
 }
 
 :root {
@@ -20,6 +27,7 @@ body {
 .header h1 {
     font-size: 2.5rem;
     line-height: 75px;
+    margin-top: 32px;
 }
 
 .hover {
@@ -39,7 +47,7 @@ body {
 .gameboard {
     width: var(--game-width);
     height: var(--game-width);
-    border: 1px solid black;
+    border: 1px solid white;
     display: inline-block;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -47,7 +55,7 @@ body {
 }
 
 .square {
-    border: 1px solid black;
+    border: 1px solid white;
     position: relative;
 }
 
@@ -79,10 +87,10 @@ body {
 nav.intro-sidebar {
     position: absolute;
     width: 250px;
-    border: 1px solid black;
+    border: 1px solid white;
     height: 100vh;
     top: 0;
-    background:  #fff;
+    background: grey;
     padding: 10px;
     text-align: center;
     left: 0px;
@@ -143,11 +151,11 @@ nav.intro-sidebar li {
 }
 
 .computer-square.square-ship {
-    background-color: white;
+    background-color: grey;
 }
 
 .output-field {
-    border: 1px solid black;
+    border: none;
     width: 50%;
     margin: 0 auto 1rem;
     text-align: center;
@@ -216,7 +224,7 @@ h2.output-message {
     position: fixed;
     right: 5%;
     top: 5%;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
     cursor: pointer;
     z-index: 4;
@@ -228,7 +236,7 @@ h2.output-message {
 }
 
 .multiplier h1 {
-    color: black !important;
+    color: white !important;
 }
 
 .multiplier .hidden {
