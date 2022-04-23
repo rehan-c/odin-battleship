@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" defer src="./src/index.js"></script>
+</head>
+<body>
+    <main>
+        <!--
+            <section class="intro-screen">
+                <h1>Type any key to play</h1>
+            </section>
+        -->
+        <header class="header">
+            <h1>Battleship</h1>
+        </header>
+        <div class="multiplier">
+            <h1>1<span></span></h1>
+            <div class="hidden">click me!</div>
+        </div>
+        <div class="output-field"></div>
+
+        <nav class="intro-sidebar">
+            <h2>Place your ships.</h2>
+            <ul>
+                <li class="carrier-container">
+                    <h2 class="ship-val">1</h2>
+                    <div class="draggable carrier" draggable="true">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </li>
+                <li class="battleship-container">
+                    <h2 class="ship-val">1</h2>
+                    <div class="draggable battleship" draggable="true">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </li>
+                <li class="destroyer-container">
+                    <h2 class="ship-val">2</h2>
+                    <div class="draggable destroyer" draggable="true">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </li>
+                <li class="patrol-container">
+                    <h2 class="ship-val">1</h2>
+                    <div class="draggable patrol" draggable="true">
+                        <div class="square"></div>
+                        <div class="suqare"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="gameboards-container">
+            <div class="gameboard player-board"></div>
+            <div class="gameboard computer-board"></div>
+        </div>
+    </main>
+</body>
+</html>
