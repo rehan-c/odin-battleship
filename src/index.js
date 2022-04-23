@@ -383,7 +383,7 @@ function preREnderEnemyShip(ship, amount) {
 }
 
 function renderComputerBoard() {
-    for (const [key, value] of Object.entries(computerBOard.shipsToRender)) {
+    for (const [key, value] of Object.entries(computerBoard.shipsToRender)) {
         preRenderEnemyShip(key, value);
     }
 }
