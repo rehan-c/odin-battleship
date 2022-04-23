@@ -381,13 +381,13 @@ function preREnderEnemyShip(ship, amount) {
         }
     }
 }
-/*
+
 function renderComputerBoard() {
     for (const [key, value] of Object.entries(computerBoard.shipsToRender)) {
         preRenderEnemyShip(key, value);
     }
 }
-*/
+
 export function renderGameBoards() {
     const playerBoard = document.querySelector(".player-board"),
     computerBoard = document.querySelector(".computer-board");
